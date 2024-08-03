@@ -1,9 +1,4 @@
-import "dotenv/config";
-import { MultiOnClient } from "multion";
-
-const multion = new MultiOnClient({
-    apiKey: process.env.MULTION_API_KEY,
-});
+import multion from "../lib/multion-client.js";
 
 // Scrape single page
 const retrieveResponse = await multion.retrieve({
